@@ -79,7 +79,7 @@
 		<li>
 			<a href="{{ URL::to($slide->url) }}">
 				
-				<img src="{{ route('media.view', $slide->image->path) }}" alt="{{ $slide->title }}">
+				<img src="{{ $slide->image_url }}" alt="{{ $slide->title }}">
 
 			</a>
 		</li>

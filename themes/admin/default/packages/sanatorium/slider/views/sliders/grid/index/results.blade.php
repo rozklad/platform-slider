@@ -5,7 +5,6 @@
 		<tr data-grid-row>
 			<td><input content="id" input data-grid-checkbox="" name="entries[]" type="checkbox" value="<%= r.id %>"></td>
 			<td><a href="<%= r.edit_uri %>" href="<%= r.edit_uri %>"><%= r.id %></a></td>
-			<td><%= r.media_id %></td>
 			<td><%= r.title %></td>
 			<td><%= r.subtitle %></td>
 			<td><%= r.created_at %></td>

@@ -52,7 +52,7 @@
 <ul class="bxslider layout-3">
 	@foreach( $slides as $slide )
 
-		<li style="background-image:url({{ route('media.view', $slide->image->path) }})">
+		<li style="background-image:url({{ $slide->image_url }})">
 			
 			<div title="{{ $slide->title }}">
 				

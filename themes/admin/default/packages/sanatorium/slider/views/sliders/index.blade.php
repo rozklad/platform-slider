@@ -195,7 +195,6 @@
 				<tr>
 					<th><input data-grid-checkbox="all" type="checkbox"></th>
 					<th class="sortable" data-sort="id">{{{ trans('sanatorium/slider::sliders/model.general.id') }}}</th>
-					<th class="sortable" data-sort="media_id">{{{ trans('sanatorium/slider::sliders/model.general.media_id') }}}</th>
 					<th class="sortable" data-sort="title">{{{ trans('sanatorium/slider::sliders/model.general.title') }}}</th>
 					<th class="sortable" data-sort="subtitle">{{{ trans('sanatorium/slider::sliders/model.general.subtitle') }}}</th>
 					<th class="sortable" data-sort="created_at">{{{ trans('sanatorium/slider::sliders/model.general.created_at') }}}</th>

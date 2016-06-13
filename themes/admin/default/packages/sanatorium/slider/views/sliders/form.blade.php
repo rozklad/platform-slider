@@ -17,6 +17,12 @@
 {{-- Inline styles --}}
 @section('styles')
 @parent
+<style type="text/css">
+	.attributes-inline hr, .attributes-inline .btn-primary,
+	.attributes-inline legend {
+		display: none;
+	}
+</style>
 @stop
 
 {{-- Page content --}}
@@ -93,24 +99,13 @@
 				<div class="tab-content">
 
 					{{-- Tab: General --}}
-					<div role="tabpanel" class="tab-pane fade in active" id="general-tab">
+					<div role="tabpanel" class="tab-pane fade in active attributes-inline" id="general-tab">
 
 						<fieldset>
 
 							<div class="row">
 
-								<div class="form-group{{ Alert::onForm('media_id', ' has-error') }}">
-
-									<label for="media_id" class="control-label">
-										<i class="fa fa-info-circle" data-toggle="popover" data-content="{{{ trans('sanatorium/slider::sliders/model.general.media_id_help') }}}"></i>
-										{{{ trans('sanatorium/slider::sliders/model.general.media_id') }}}
-									</label>
-									
-									@media_select($slider)
-
-									<span class="help-block">{{{ Alert::onForm('media_id') }}}</span>
-
-								</div>
+								@attributes($slider, ['slider_image'])
 
 								<div class="form-group{{ Alert::onForm('title', ' has-error') }}">
 
