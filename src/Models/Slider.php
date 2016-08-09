@@ -44,7 +44,7 @@ class Slider extends Model implements EntityInterface {
 		if ( !is_object($medium) )
 			return false;
 
-		return StorageUrl::url($medium->path);
+		return storage_url($medium->path);
 	}
 
 }
